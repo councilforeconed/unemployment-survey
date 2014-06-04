@@ -1,0 +1,15 @@
+.respondents {
+  margin-top: 2rem;
+  label {
+    font-weight: 400;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    &:nth-child(2n + 1) {
+      background-color: #EEE;
+    }
+  }
+}

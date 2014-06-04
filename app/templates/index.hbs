@@ -1,0 +1,15 @@
+<div class="sixteen columns header-table">
+  <div class="four columns"><h4>Unemployment Rate</h4> {{format-percent unemploymentRate}}</div>
+  <div class="four columns"><h4>Total Employed</h4> {{totalEmployed}}</div>
+  <div class="four columns"><h4>Total Unemployed</h4> {{totalUnemployed}}</div>
+  <div class="four columns"><h4>Total Young or Institutionalized</h4> {{totalYoungOrInstitutionalized}}</div>
+</div>
+
+{{#each respondent in this}}
+  {{respondent-row name=respondent.name card=respondent.card status=respondent.status}}
+{{/each}}
+
+<div class="sixteen columns button-bar">
+  {{#if canRemoveRespondent}}<button {{action 'removeRespondent'}} class="secondary">Remove Last Respondent</button>{{/if}}
+  <button {{action 'addRespondent'}}>Add Respondent</button>
+</div>

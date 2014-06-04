@@ -1,0 +1,13 @@
+.header-table {
+  margin-top: 2rem;
+  h4 {
+    font-size: 0.8em;
+    @media screen and (max-width: 768px) {
+        display: inline;
+        font-size: 1em;
+        :after {
+          content: ': '
+        }
+    }
+  }
+}

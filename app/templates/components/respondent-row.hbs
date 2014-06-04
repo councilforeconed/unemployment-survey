@@ -1,0 +1,15 @@
+<div class="six columns">
+  <label>First Name</label>
+  {{input type="text" value=name placeholder="First Name"}}
+</div>
+<div class="five columns">
+  <label>Card Number</label>
+  {{input type="number" value=card placeholder="Card Number"}}
+</div>
+<div class="five columns">
+  <label>Employment Status</label>
+  {{view Ember.Select viewName="select"
+                      content=statuses
+                      selection=status
+                      prompt="Select Employment Status"}}
+</div>
