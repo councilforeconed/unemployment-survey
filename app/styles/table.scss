@@ -1,4 +1,13 @@
+@import 'colors';
+
+@mixin header($color) {
+  background-color: $color;
+  padding: 1rem 0;
+  border-radius: 3px;
+}
+
 .header-table {
+  text-align: center;
   margin-top: 2rem;
   h4 {
     font-size: 0.8em;
@@ -9,5 +18,20 @@
           content: ': '
         }
     }
+  }
+  .rate h4 {
+    @include header(none);
+  }
+  .employed h4 {
+    @include header($leafGreen);
+  }
+  .unemployed h4 {
+    @include header($red);
+  }
+  .ineligible h4 {
+    @include header($yellow);
+  }
+  p {
+    font-size: 2rem;
   }
 }

@@ -12,6 +12,7 @@
     "loader.js": "git://github.com/stefanpenner/loader.js",
     "ember-load-initializers": "git://github.com/stefanpenner/ember-load-initializers.git#0.0.1",
     "numeral": "~1.5.3",
-    "skeleton-sass": "~1.6.3"
+    "skeleton-sass": "~1.6.3",
+    "ember-charts": "*"
   }
 }

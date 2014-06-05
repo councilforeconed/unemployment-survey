@@ -4,7 +4,7 @@ input[type="number"], input[type="text"] {
   font-family: "Open Sans";
   line-height: normal;
   padding: 0.25em;
-  width: 80%;
+  width: 100%;
   border: 1px solid #CCC;
   border-radius: 3px;
   font-size: 1em;
@@ -12,6 +12,9 @@ input[type="number"], input[type="text"] {
   &:active {
     outline: none;
   };
+  @media screen and (max-width: 768px) {
+    width: 92%;
+  }
 }
 
 select {
@@ -27,6 +30,6 @@ select {
     outline: none;
   };
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 92%;
   }
 }
