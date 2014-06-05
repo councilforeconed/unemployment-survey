@@ -20,7 +20,7 @@
     }
   }
   .rate h4 {
-    @include header(none);
+    @include header($pale);
   }
   .employed h4 {
     @include header($leafGreen);
